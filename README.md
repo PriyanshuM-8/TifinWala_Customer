@@ -6,7 +6,7 @@ The Customer Application provides a simple and responsive interface where users 
 
 ## Features
 
-### 1. Explore Homemade Food
+### 1. Explore Homemade Food  
 - Browse available homemade food without logging in.
 - Explore food categories.
 - View food details, prices, images, and descriptions.
