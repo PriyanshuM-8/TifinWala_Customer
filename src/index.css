@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #14513F;
+  --color-brand-primary-dark: #0E3B2E;
+  --color-brand-primary-light: #1C6B54;
+  --color-brand-orange: #F6A23A;
+  --color-brand-orange-hover: #E08F2A;
+  --color-brand-cream: #FFFDF8;
+  --color-brand-dark: #27352F;
+  --color-brand-secondary: #737B76;
+  --color-brand-light: #F7F8F5;
+  --color-brand-border: #E8ECE7;
+  
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+@layer base {
+  * {
+    border-color: #E8ECE7;
+  }
+  
+  body {
+    background-color: #F7F8F5;
+    color: #27352F;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Hide scrollbar for clean horizontal scrolls */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
